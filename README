@@ -1,5 +1,28 @@
 # springboot-fizzbuzz
 
+Créer un project  Spring Boot via l’éditeur Visual Studio Code 
+
+J'ai crée une classe fizzbuzz avec une méthode functionFizzBuzz qui fait le retour d'un texte selon le nombre envoyé en paramètre : 
+
+Si le reste de la division par 3 est 0 alors c'est  Fizz
+Si le reste de la division par 5 est 0 alors c'est  Buzz
+Si le reste de la division par 3 est 0  et le reste de la division par 5 est 0 alors c'est  FizzBuzz
+Si non la fonction affiche le nombre
+
+Pour assurer le retour du fichier Json
+J’ai utilisé une boucle While dont j'ai fait appel à la fonction  toFizzBuzz
+et afficher le résultat dans un retour Json 
+RequestMapping assure l'entrée du nombre à traiter et l'affichage Json 
+
+Pour démarrer le projet, il suffit d'ouvrir l'éditeur de commande et lancer cette commande
+./mvnw spring-boot:run
+http://localhost:8080/20
+
+20 représente le nombre d'entré
+
+
+
 ## Development Sring boot server
 
 Run `./mvnw spring-boot:run` for Sring boot server. Navigate to `http://localhost:8080/20`.
+
