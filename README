@@ -1,0 +1,5 @@
+# springboot-fizzbuzz
+
+## Development Sring boot server
+
+Run `./mvnw spring-boot:run` for Sring boot server. Navigate to `http://localhost:8080/20`.
