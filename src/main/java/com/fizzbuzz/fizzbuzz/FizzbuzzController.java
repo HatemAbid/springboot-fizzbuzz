@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableAutoConfiguration
 @ComponentScan
 public class FizzbuzzController {
-	private final Fizzbuzz fizzBuzz;
+	
+	private Fizzbuzz fizzBuzz;
 	private String json;
 
 	@Autowired
@@ -24,11 +25,11 @@ public class FizzbuzzController {
 		this.json = "[";
 		int i = 1;
 		while (i <= number-1) {
-			System.out.println("While loop: " + i + " = " + fizzBuzz.toFizzBuzz(i) );
-			this.json = this.json + "{\"" + i + "\" : \"" + fizzBuzz.toFizzBuzz(i) + "\"},";
+			// System.out.println("Number : " + i + " = " + fizzBuzz.functionFizzBuzz(i) );
+			this.json = this.json + "{\"" + i + "\" : \"" + fizzBuzz.functionFizzBuzz(i) + "\"},";
 			i++;
 		}
-		this.json = this.json + "{\"" + number + "\" : \"" + fizzBuzz.toFizzBuzz(number) + "\"}";
+		this.json = this.json + "{\"" + number + "\" : \"" + fizzBuzz.functionFizzBuzz(number) + "\"}";
 		this.json += "]";
 		return this.json;
 	}
